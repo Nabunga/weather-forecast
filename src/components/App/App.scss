@@ -1,0 +1,79 @@
+@import '../../styles/main.scss';
+
+body {
+  background-color: $accent;
+  background-image: url('../../assets/Background/Academy-Weather\ forecast-Bg-up-1.png');
+  background-repeat: no-repeat;
+}
+
+.header {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 32px;
+  width: 320px;
+  height: 120px;
+  color: $base-weak;
+  @include from ($ipad) {
+    width: 1280px;
+    height: 342px;
+  }
+  &__first-item {
+    position: absolute;
+    width: 131px;
+    height: 32px;
+    left: 39px;
+    top: 32px;
+    @include from ($ipad) {
+      font-size: 102px;
+      line-height: 122px;
+      left: 258px;
+      top: -33px;
+    }
+    @include from ($laptop) {
+      left: 342px;
+
+    }
+  }
+  &__second-item {
+    position: absolute;
+    width: 128px;
+    height: 32px;
+    left: 154px;
+    top: 64px;
+    @include from ($ipad) {
+      font-size: 102px;
+      line-height: 122px;
+      left: 623px;
+      top: 55px;
+    }
+    @include from ($laptop) {
+      left: 705px;
+    }
+  }
+}
+
+.main {
+  @include from ($laptop) {
+    display: flex;
+  }
+}
+
+.footer {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 80px;
+  margin-left: 15px;
+  color: $base-weak;
+  @include from ($ipad) {
+    display: flex;
+    justify-content: center;
+  }
+  &__text {
+    text-transform: uppercase;
+  }
+}

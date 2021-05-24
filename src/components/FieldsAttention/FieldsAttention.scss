@@ -1,0 +1,26 @@
+@import '../../styles/main.scss';
+
+.fields-attention {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: $secondary;
+  &__image {
+    padding-top: 24px;
+    padding-left: 69px;
+    @include from ($ipad) {
+      padding-top: 60px;
+      padding-left: 249px;
+    }
+  }
+  &__text {
+    max-width: 260px;
+    margin-left: 55px;
+    padding-top: 10px;
+    line-height: 21px;
+    @include from ($ipad) {
+      max-width: 500px;
+      margin-left: 132px;
+    }
+  }
+}

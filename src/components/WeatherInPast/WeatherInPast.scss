@@ -1,0 +1,56 @@
+@import '../../styles/main.scss';
+
+.weather-in-past-card {
+  position: relative;
+  width: 300px;
+  height: 574px;
+  left: 8px;
+  box-shadow: 0px 4px 4px rgba(4, 5, 73, 0.25), 14px 14px 20px rgba(5, 6, 114, 0.2);
+  border-radius: 8px;
+  background-color: $base-weak;
+  @include from ($ipad) {
+    width: 660px;
+    height: 524px;
+    left: 310px;
+    top: -8px;
+  }
+  @include from ($laptop) {
+    left: 74px;
+    top: -4px;
+  }
+  &__header {
+    padding-left: 20px;
+    padding-top: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: $base-strong;
+    @include from ($ipad) {
+      padding-left: 59px;
+      padding-top: 50px;
+    }
+    @include from ($laptop) {
+      padding-top: 26px;
+    }
+  }
+  &__date-input {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: $secondary;
+    width: 252px;
+    height: 48px;
+    background: rgba(128, 131, 164, 0.06);
+    border: 2px solid rgba(128, 131, 164, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-left: 23px;
+    margin-top: 24px;
+    @include from ($ipad) {
+      position: absolute;
+      left: 327px;
+      top: 88px;
+    }
+  }
+}

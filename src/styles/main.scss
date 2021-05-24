@@ -1,0 +1,37 @@
+//color variables
+$accent: #373AF5;
+$secondary: #8083A4;
+$base-strong: #2C2D76;
+$critic: #E5596D;
+$base-weak: #FFFFFF;
+
+//custom fonts
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Ubuntu-Bold') 
+    url(../assets/Fonts/Ubuntu-Bold.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ubuntu-Regular') 
+    url(../assets/Fonts/Ubuntu-Regular.ttf) format('ttf');
+}
+
+// mixins
+@mixin from($pixels) {
+	@media screen and (min-width: $pixels+'px') {
+		@content;
+	}
+}
+
+//media queries
+$mobile: 320;
+$ipad: 1280;
+$laptop: 1440;
+
+
